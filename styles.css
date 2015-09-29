@@ -97,11 +97,13 @@ img {
     width: 30%;
     margin-right: 3%;
     float: left;
+    top: 0;
 }
 
 #tripleRow:after {
-    clear: both;
-    margin-bottom: 10px;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .rowBox p {
