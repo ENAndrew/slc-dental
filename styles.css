@@ -50,8 +50,8 @@ img {
 
 
 .headNav {
-        padding-top: 30px;
-        margin: 0 4% 20px 4%;  
+    padding-top: 30px;
+    margin: 0 4% 20px 4%;  
 }
 
 .headNav a {
@@ -66,13 +66,17 @@ img {
 
 .nav-list {
     display: inline-block;
-    float: right;
-    width: 55%;
+/*    float: right;*/
+/*    width: 55%;*/
 }
 
 .nav-list li {
     display: inline;
     list-style-type: none;
+}
+
+#listSmall, #hamMenu {
+    display: none;
 }
 
 .row, .carContainer {
@@ -142,6 +146,10 @@ img {
     padding-top: 30px;
 }
 
+#toggle2 {
+    visibility: hidden;
+}
+
 .toggles a {
     margin-top: 0px;
     float: right;
@@ -208,7 +216,8 @@ img {
         padding: 10px;
         font-size: 70%;
         width: 50%;
-    }   
+    }  
+
 }
 
 @media (max-width: 697px) {
@@ -217,12 +226,30 @@ img {
         padding: 0 10px 0 10px;
     }
     
-    .topLink {
-        background-color: #004e8e;
-        color: white;
-        border-radius: 10px;
-        padding: 10px;
-        font-size: 50%;
+    #listSmall {
+        display: block;
+        float: none;
     }
 
+    #listLarge {
+        display: none;
+    }
+    
+    #toggle2 {
+        visibility: visible;
+    }
+   
+    #toggle1 {
+        display: none;
+    }
+
+}
+
+@media (max-width: 500px) {
+    
+    .rowBox {
+        display: block;
+        width: 100%;
+        float: none
+    }
 }
